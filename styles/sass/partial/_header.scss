@@ -1,0 +1,61 @@
+@use './variables' as *;
+
+
+header {
+    height: 700px;
+    .wrapper{
+        border-right: solid $primarycolor 1px;
+        border-left: solid $primarycolor 1px; 
+    }
+}
+.logo-container{
+    width: 30px;
+}
+
+.navigation-container{
+    border-bottom: solid $primarycolor 1px;
+   
+
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+        line-height: 30px;
+
+       
+        a{
+           margin-right: 5px;
+        }
+    }
+}
+
+.intro-section{
+    margin-top: 40px;
+    padding-top: 40px;
+    align-self: center;
+    position: relative;
+    
+    .blurry-circle-image{
+        position: absolute;
+        z-index: 1;
+        right: -120px;
+   }
+
+    h2{
+        text-align: right;
+        position: relative;
+        z-index: 2; 
+    }
+
+    p{
+        padding:0px 100px ;
+    }
+}
+
+.intro-job-title{
+    font-size: 100px;
+    z-index: 2; 
+    position: relative;
+
+}

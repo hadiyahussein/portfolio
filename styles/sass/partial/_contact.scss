@@ -1,0 +1,78 @@
+@use './variables' as *;
+
+.contact {
+  
+    h2{
+        margin: 70px 0px;
+        border-top: solid $primarycolor 1px;
+        border-bottom: solid $primarycolor 1px;
+    }
+
+    .contact-image{
+        position: absolute;
+        z-index: 1; 
+        width: 500px;
+    }
+
+    .form-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-icon{ 
+        gap: 15px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 20px;
+    
+        
+        i{
+            color: black;
+            font-size: 50px;
+        }
+    }
+
+
+
+    .form{
+        z-index: 2; 
+        display: flex;
+        flex-direction: column;
+        padding: 0px 200px;
+        gap: 20px;
+        
+        input,textarea,button{
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        button{
+            color: $primarycolor;
+            font-family:$featurefont;
+        }
+
+        button:before {
+            
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            opacity: 0;
+         
+        }
+          
+        button:hover:before {
+            opacity: 1;
+        }
+        
+    }
+}      

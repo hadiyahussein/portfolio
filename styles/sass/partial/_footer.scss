@@ -1,0 +1,9 @@
+@use './variables' as *;
+
+
+footer{
+    border-top: solid $primarycolor 1px;
+    padding: 20px;
+    padding-top: 5px;
+    margin-top: 10px;
+}

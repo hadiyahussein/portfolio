@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: 'pp';
+    src: url('../fonts/PPEditorialNew-Ultralight 2.otf') ;
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'feature';
+    src: url('../fonts/otf/Satoshi-Medium.otf') ;
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+
+$headerfont: "pp", sans-serif;
+$featurefont: 'feature', sans-serif;
+$bodyfont:'IBM Plex Sans', sans-serif;
+$primarycolor:#2B2A2B; 
+$highlightcolor:#e9e5da;
+$secondarycolor:black;
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.5 302.09">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2b2a2b;
+        font-family: PPEditorialNew-Italic, 'PP Editorial New';
+        font-size: 78.06px;
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(20.51 71.2) rotate(-2.68)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-1" transform="translate(51.15 67.87) rotate(38.42)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-1" transform="translate(84.61 91.94) rotate(70.67)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-1" transform="translate(101.28 141.66) rotate(80.38)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-1" transform="translate(105.08 203.68) rotate(75.96)"><tspan x="0" y="0">K</tspan></text>
+</svg>

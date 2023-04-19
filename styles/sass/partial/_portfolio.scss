@@ -1,0 +1,62 @@
+@use './variables' as *;
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    h2{
+        border-top: solid $primarycolor 1px;
+        border-bottom: solid $primarycolor 1px;
+    }
+}
+
+.portfolio-planted{
+    flex-direction: row;
+}
+.portfolio-planted p{
+    padding-left: 100px;
+}
+.portfolio-expresso p{
+    padding-left: 100px;
+}
+.portfolio-matcha p{
+    padding-right: 100px;
+}
+.portfolio-text >*{
+    margin: 10px;
+}
+
+.portfolio-text{
+    padding: 50px;
+}
+
+.portfolio-container-right{
+    width: 700px;
+    margin-left: 400px;
+    padding-top: 140px;
+    .portfolio-text{
+        text-align: right;
+    }
+}
+
+.portfolio-container-left{
+    margin-right: 400px;
+
+    width: 700px;
+    padding-top: 140px;
+
+}
+
+.one,.three{
+    left: -310px;
+}
+
+.two{
+    right: -210px;
+}
+
+
+.four{
+    right: -90px;
+}

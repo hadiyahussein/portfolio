@@ -1,0 +1,103 @@
+@media (max-width: 1020px){
+    .blurry-circle-image{
+        display:none ;
+    }
+    html{
+        font-size: 100%;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+    header{
+        height: auto;
+    }
+    .about-text{
+        .gif{
+            display:none ;
+        }
+        gap:0;
+
+    }
+    .about{
+        margin: 10px;
+    }
+
+    .tech-stack h3{
+        font-size:3rem ;
+    }
+
+    .tech-stack-icons{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .intro-section{
+        z-index: 2; 
+    }
+    
+
+    .contact{
+        .form{
+            padding: 0px;
+        }
+    }
+}
+
+@media (max-width: 1356px){
+
+    .portfolio-text{
+        margin-top: 50px;
+    }
+    
+   
+    .hidden-text {
+        padding-left: 150px;
+    }
+    .number{
+        display: none;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .portfolio-container-right{
+  
+      width: auto;
+        margin-left: 0px;
+        padding-top: 0px;
+        
+    }
+    
+    .portfolio-container-left{
+        margin-right: 0;
+        width: auto;
+        padding-top: 0;
+    }
+    .portfolio-planted p{
+        padding-left: 0px;
+    }
+    .portfolio-expresso p{
+        padding-left: 0px;
+    }
+    .portfolio-matcha p{
+        padding-right: 0px;
+    }
+    
+    .portfolio-text{
+        text-align: center;
+        padding: 0px;
+
+    }
+    .portfolio-container-right .portfolio-text {
+        text-align: center;
+      }
+
+      .portfolio-container-left .portfolio-text {
+        text-align: center;
+      }
+    h4,p{
+        text-align: center;
+    }
+
+    h2{
+        line-height: 62px;
+    }
+}

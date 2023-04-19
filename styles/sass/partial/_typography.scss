@@ -1,0 +1,80 @@
+@use './variables' as *;
+
+
+.intro-section p {
+    font-family:$headerfont;
+    font-size: 6.5rem;
+    text-align: left;
+    letter-spacing: -0.024em; 
+}
+   
+.hidden-text {
+    position: relative;
+    z-index: 2;
+    text-align: right;
+    padding-left:200px;
+
+}
+h1{
+    font-family: $headerfont;
+    font-size: clamp(2.25rem, -1.2156rem + 19.75vw, 19rem);
+    font-weight: 100;
+}
+
+h2 {
+    font-family:$headerfont;
+    font-size: clamp(1.5rem, 0.825rem + 3.6vw, 5.1rem);
+    color: #1d5238;
+    letter-spacing: -0.4px;
+    line-height: 150px;
+    font-weight: 300;
+}
+
+h3 {
+    font-family:$headerfont;
+}
+h4{
+    font-family: $featurefont;
+    letter-spacing: -0.28px;
+    line-height: 23.4px;
+}
+.about-text {
+    p{
+        font-size: 0.9rem;
+        line-height: 23px;
+        letter-spacing: 0.04px;
+        font-weight: 300;
+    }
+}
+
+p {
+    font-family:$bodyfont;
+    font-size: 1.0rem;
+    letter-spacing: -0.03;
+    color:$primarycolor;
+    font-weight: 600;
+}
+
+a{
+    font-family: $featurefont;
+    font-size: 0.85rem;
+    letter-spacing: -1.18px;
+    text-decoration:none;
+    font-weight: 900;
+}
+
+a, a:visited, a:hover, a:active {
+    color: #29368d;
+}
+.number{
+
+}
+
+.number{
+    position: absolute;
+    font-size: 500px;
+    font-family: $featurefont;
+    font-weight: 200;
+    border-top: solid #2e2e2c 1px;
+    color: #2e2e2c;
+}

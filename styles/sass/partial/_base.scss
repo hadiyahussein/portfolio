@@ -1,0 +1,52 @@
+@use './variables' as *;
+
+html{
+    background-color:$highlightcolor;
+    font-size: 125%;
+    overflow-x: hidden;
+}
+
+body{
+    color: $primarycolor;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.wrapper-portfolio{
+    max-width: 1600px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
+
