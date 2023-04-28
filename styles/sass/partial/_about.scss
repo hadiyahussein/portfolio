@@ -1,69 +1,91 @@
 @use './variables' as *;
 
-.about{
-  margin: 200px 0px;
-
-  h2{
-    margin: 100px 0px;
-    margin-bottom: 50px;
-    border-top: solid $primarycolor 1px;
-    border-bottom: solid $primarycolor 1px;
+.about-main {
+  background-color: $primarycolor;
+  color: $highlightcolor;
+  cursor: url('../assets/mouse.png'), auto;
+  .navigation-container{
+    border-bottom: solid $secondarycolor 1px;
+  }
+  .navigation{
+    border-right: solid $secondarycolor 1px;
+    border-left: solid $secondarycolor 1px; 
+  }
+  .hamburger .line {
+    background-color: $secondarycolor;
   }
 }
 
-.about-text{ 
-  display: flex;
-  position: relative;
-  z-index: 2; 
+.about {
+  padding: 100px 0;
+  h2 {
+    border-bottom: solid $secondarycolor 1px;
+  }
+}
+
+.about-img {
+  position: fixed;
+  width: 30%;
+}
+
+.about-text {
   margin-bottom: 50px;
-  p{
-    padding: 40px 20px;
-    padding-top: 70px;
-    border-right: solid $primarycolor 1px;
-    border-left: solid $primarycolor 1px;
+  margin-left: 500px;
+  padding: 10px 20px;
+  border-left: solid $highlightcolor 0.5px;
+  h2 {
+    margin: 0 0 45px;
   }
-
-  .gif{
-    width: 95%;
-    height: 95%;
-    align-self: center;
-    margin: 20px;
-  } 
+  p {
+    font-size: 17px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.04px;
+    color: $highlightcolor;
+    &.pending-skills {
+      margin-top: 0;
+      color: rgb(158, 155, 155);
+    }
+  }
 }
-.tech-stack-icons{
+
+.tech-stack-icons {
   display: flex;
-  gap: 30px;
-  margin-top: 10px;
-  justify-content: space-between;
-  align-content: center;
   flex-wrap: wrap;
-  
-  i{
-    font-size: 2.5rem;
-    color: $secondarycolor;
-  }
-  
-  li{
-    width: 50px;
-    height: 50px;
-  }
-}
-
-
-.tech-stack{
-  border-top: solid $primarycolor 1px;
-  border-bottom: solid $primarycolor 1px;
-  flex-direction: column;
-  padding: 15px;
-  margin-top: 175px;
-  .tech-stack-header{
+  gap:5px;
+  margin-top: 15px;
+  li {
     display: flex;
-    height: 50%; 
-  }
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 30px;
+    flex: 1;
 
-  h3{
-    font-size: clamp(3.7rem, 3.3625rem + 1.8vw, 5.5rem);
-    border-bottom: solid $primarycolor 1px;
+    i {
+      font-size: 3.0rem;
+      color: $highlightcolor;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      flex: 1;
+    }
+
+    p {
+      margin-top: 15px;
+      font-weight: 700;
+      font-size: 15px;
+    }
   }
 }
- 
+
+.tech-stack {
+  margin-top: 25px;
+
+  h3 {
+    font-size: clamp(3.7rem, 3.3625rem + 1.8vw, 5.5rem);
+    color: $highlightcolor;
+  }
+} 

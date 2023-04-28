@@ -1,80 +1,70 @@
 @use './variables' as *;
 
-
 .intro-section p {
-    font-family:$headerfont;
-    font-size: 6.5rem;
-    text-align: left;
-    letter-spacing: -0.024em; 
+    font-family:$bodyfont;
 }
    
-.hidden-text {
-    position: relative;
-    z-index: 2;
-    text-align: right;
-    padding-left:200px;
-
-}
 h1{
     font-family: $headerfont;
-    font-size: clamp(2.25rem, -1.2156rem + 19.75vw, 19rem);
+    font-size: clamp(1.375rem, 0.8594rem + 2.75vw, 4.125rem);
+    line-height: 72px;
     font-weight: 100;
+    letter-spacing: -0.84px;
 }
 
 h2 {
     font-family:$headerfont;
-    font-size: clamp(1.5rem, 0.825rem + 3.6vw, 5.1rem);
-    color: #1d5238;
+    font-size: 20px;
     letter-spacing: -0.4px;
-    line-height: 150px;
+    line-height: 50px;
     font-weight: 300;
 }
 
 h3 {
+    
     font-family:$headerfont;
+    color: #484848;
+    text-align: left;
+    font-size: clamp(0.75rem, 0.6211rem + 0.6875vw, 1.4375rem);
 }
+
 h4{
-    font-family: $featurefont;
+    font-family: $headerfont;
     letter-spacing: -0.28px;
     line-height: 23.4px;
-}
-.about-text {
-    p{
-        font-size: 0.9rem;
-        line-height: 23px;
-        letter-spacing: 0.04px;
-        font-weight: 300;
-    }
+    font-size: 24px;
 }
 
 p {
     font-family:$bodyfont;
-    font-size: 1.0rem;
-    letter-spacing: -0.03;
+    font-size: clamp(0.75rem, 0.6914rem + 0.3125vw, 1.0625rem);
+    letter-spacing: -0.03px;
     color:$primarycolor;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 a{
     font-family: $featurefont;
-    font-size: 0.85rem;
-    letter-spacing: -1.18px;
+    font-size: 15px;
+    letter-spacing: 0.1px;
     text-decoration:none;
     font-weight: 900;
+    color: $secondarycolor;
 }
 
-a, a:visited, a:hover, a:active {
-    color: #29368d;
+.portfolio-container{
+    p{
+       line-height:22.7833px; 
+       letter-spacing: -0.277px;
+    }
 }
-.number{
-
+span{
+    font-family: "maiola, serif";
+    font-style: italic;
+    font-weight: 600;  
 }
-
-.number{
-    position: absolute;
-    font-size: 500px;
-    font-family: $featurefont;
-    font-weight: 200;
-    border-top: solid #2e2e2c 1px;
-    color: #2e2e2c;
+p{
+    span{
+        font-size: 25px;
+    }
 }

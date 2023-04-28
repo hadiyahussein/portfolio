@@ -1,12 +1,12 @@
 @use './variables' as *;
 
-html{
-    background-color:$highlightcolor;
+html {
+    background-color: $highlightcolor;
     font-size: 125%;
     overflow-x: hidden;
 }
 
-body{
+body {
     color: $primarycolor;
 }
 
@@ -15,8 +15,9 @@ body{
     width: 90%;
     margin: 0 auto;
 }
+
 .wrapper-portfolio{
-    max-width: 1600px;
+    max-width: 1200px;
     width: 75%;
     margin: 0 auto;
 }
@@ -24,29 +25,44 @@ body{
 img {
     max-width: 100%;
     height: auto;
-    display: inline-block;
 }
 
-li{
+li {
     list-style: none;
 }
-.hidden{
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(5px);
-}
-.show{
-    opacity: 1;
-    filter: blur(0px);
-}
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul{
+h1, h2, h3, h4, p, ul {
     margin: 0;
     padding: 0;
 }
 
+h2 {
+    border-bottom: 1px solid $primarycolor;
+}
+
+.portfolio .portfolio-nav {
+    a:hover,
+    a:active {
+    color: $accentcolor;
+    }
+}
+.social-link {
+    a:hover,
+    a:active {
+        color: $accentcolor;
+    }
+}
+a:hover,
+a:active {
+    color: $accentcolor;
+}
+.box{
+    transform: translateX(400%);
+    transition: transform 0.8s ease;
+}
+.box:nth-of-type(odd){
+    transform: translateX(-400%);
+}
+.box.show{
+    transform: translateX(0);
+}

@@ -1,103 +1,136 @@
 @media (max-width: 1020px){
-    .blurry-circle-image{
-        display:none ;
-    }
+   
     html{
-        font-size: 100%;
         margin: 0px;
-        overflow-x: hidden;
+        
     }
     header{
         height: auto;
-    }
-    .about-text{
-        .gif{
-            display:none ;
+        .intro-section{
+            margin: 100px 15px;
         }
-        gap:0;
-
     }
-    .about{
-        margin: 10px;
+    h1{
+        line-height: 34px;
     }
-
-    .tech-stack h3{
-        font-size:3rem ;
+    .wrapper-portfolio {
+        width: 90%;
     }
-
     .tech-stack-icons{
-        flex-wrap: wrap;
         text-align: center;
     }
 
-    .intro-section{
-        z-index: 2; 
-    }
-    
+    .portfolio-container-bottom-text {
+        p{
+            font-size:12px;
+        }
 
-    .contact{
-        .form{
-            padding: 0px;
+    }
+
+    .contact-section{
+        
+
+        .form-text{
+           
+            p{
+                margin-bottom: 35px;
+                line-height: normal;
+            }
+            span{
+                line-height: normal;
+            }
+    
         }
     }
 }
 
-@media (max-width: 1356px){
+@media (max-width: 900px){
+    .contact-section{
+        .form-text{
+            display: block;
+           
+        }
+    }   
+}
 
-    .portfolio-text{
-        margin-top: 50px;
+
+@media (max-width: 700px){
+    .social-link {
+        position:fixed;
+        height: 20vh;
+        top: 8vh;
+        right: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        z-index: 3;
+        background: rgba(131, 128, 128, 0.42);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.5px);
+        -webkit-backdrop-filter: blur(7.5px);
+        border: 1px solid rgba(101, 98, 98, 0.21);
+        transform: translate(190%);
+        transition: transform 0.4s ease-in;
+    }
+    .nav-active{
+        transform: translate(0%);
+        transition: transform 0.4s ease-in;
+    }
+    .social-link a{
+        transition: transform 0.4s ease-in;
+        opacity: 0;
+    }
+    .social-link a {
+        color: white;
     }
     
-   
-    .hidden-text {
-        padding-left: 150px;
+    .hamburger {
+        display: block;
     }
-    .number{
-        display: none;
-        margin-left: 0;
-        padding-top: 0;
+    
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .hamburger .line {
+        transition: all 0.3s ease;
+    }  
+    .hamburger.toggle .line1 {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+      
+    .hamburger.toggle .line3 {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+      
+    .hamburger.toggle .line2 {
+        opacity: 0;
+        height: 2.5px;
     }
 
-    .portfolio-container-right{
-  
-      width: auto;
+    .intro-section {
+        .blurry {
+            height: 200%;
+        } 
+    }
+}
+
+@media (max-width: 973px){
+   .about-img{
+        position:relative;
+        margin: 0 auto;
+        width: 45%;
+   }
+   .about-text{
         margin-left: 0px;
-        padding-top: 0px;
-        
-    }
-    
-    .portfolio-container-left{
-        margin-right: 0;
-        width: auto;
-        padding-top: 0;
-    }
-    .portfolio-planted p{
-        padding-left: 0px;
-    }
-    .portfolio-expresso p{
-        padding-left: 0px;
-    }
-    .portfolio-matcha p{
-        padding-right: 0px;
-    }
-    
-    .portfolio-text{
-        text-align: center;
-        padding: 0px;
-
-    }
-    .portfolio-container-right .portfolio-text {
-        text-align: center;
-      }
-
-      .portfolio-container-left .portfolio-text {
-        text-align: center;
-      }
-    h4,p{
-        text-align: center;
-    }
-
-    h2{
-        line-height: 62px;
-    }
+   }
 }

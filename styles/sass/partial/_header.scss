@@ -1,61 +1,67 @@
 @use './variables' as *;
 
-
 header {
     height: 700px;
     .wrapper{
         border-right: solid $primarycolor 1px;
         border-left: solid $primarycolor 1px; 
     }
+    .intro-section{
+        margin: 125px;
+        h1{
+            margin-bottom:65px ;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -0.34px;
+        }
+    }        
 }
-.logo-container{
+.logo-image{
     width: 30px;
 }
-
 .navigation-container{
     border-bottom: solid $primarycolor 1px;
-   
-
+    padding-bottom: 10px;
 
     .navigation{
         display: flex;
         justify-content: space-between;
         height: 30px;
-        line-height: 30px;
-
-       
+        line-height: 35px;
         a{
            margin-right: 5px;
         }
     }
 }
-
-.intro-section{
-    margin-top: 40px;
-    padding-top: 40px;
-    align-self: center;
+.intro-section {
     position: relative;
-    
-    .blurry-circle-image{
+    .blurry {
         position: absolute;
-        z-index: 1;
-        right: -120px;
-   }
-
-    h2{
-        text-align: right;
-        position: relative;
-        z-index: 2; 
-    }
-
-    p{
-        padding:0px 100px ;
-    }
+        top: -170px;
+        right: 0px;
+        width: 100%;
+        height: 300%;
+        z-index: -1;  
+    } 
 }
 
-.intro-job-title{
-    font-size: 100px;
-    z-index: 2; 
-    position: relative;
 
+.hamburger .line {
+    width: 30px;
+    height: 2.5px;
+    margin-bottom: 6px;
+    background-color: $primarycolor;
+}
+.hamburger .line3{
+    margin-bottom: 0px;
+}
+
+.hamburger {
+    align-self: flex-end;
+    cursor: pointer;
+    display: none;
+    padding-right: 20px;
 }
