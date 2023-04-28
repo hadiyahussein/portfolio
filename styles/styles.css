@@ -317,8 +317,9 @@ a:active {
 }
 
 .box.show {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .about-main {
