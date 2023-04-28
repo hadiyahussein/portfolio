@@ -1,8 +1,7 @@
 @media (max-width: 1020px){
    
-    html{
-        margin: 0px;
-        
+    html, body{
+        overflow-x: hidden;
     }
     header{
         height: auto;
@@ -24,12 +23,9 @@
         p{
             font-size:12px;
         }
-
     }
 
     .contact-section{
-        
-
         .form-text{
            
             p{
@@ -39,7 +35,6 @@
             span{
                 line-height: normal;
             }
-    
         }
     }
 }
@@ -55,6 +50,11 @@
 
 
 @media (max-width: 700px){
+
+    html, body{
+        overflow-x: hidden;
+        margin: 0;
+    }
     .social-link {
         position:fixed;
         height: 20vh;
@@ -116,11 +116,35 @@
         opacity: 0;
         height: 2.5px;
     }
+    // header {
+    //     .intro-section{
+           
+    
+    //         p{
+    //             font-size: 20px;
+    //             line-height: 28px;
+    //             letter-spacing: -0.34px;
+    //         }
+    //     }        
+    // }
 
-    .intro-section {
-        .blurry {
-            height: 200%;
-        } 
+    p span {
+        font-size: 20px;
+    }
+    
+    
+    header{
+        .intro-section {
+            
+           p{
+               font-size: 17px;
+               
+           }
+           .blurry {
+               height: 200%;
+           } 
+       }
+   
     }
 }
 

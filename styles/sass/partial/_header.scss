@@ -1,6 +1,6 @@
 @use './variables' as *;
 
-header {
+header{
     height: 700px;
     .wrapper{
         border-right: solid $primarycolor 1px;
@@ -19,8 +19,12 @@ header {
         }
     }        
 }
+.social-link{
+    margin-right: 5px;
+}
 .logo-image{
     width: 30px;
+    margin-left: 5px;
 }
 .navigation-container{
     border-bottom: solid $primarycolor 1px;
@@ -63,5 +67,5 @@ header {
     align-self: flex-end;
     cursor: pointer;
     display: none;
-    padding-right: 20px;
+    margin-right: 10px;
 }

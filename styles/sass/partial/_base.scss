@@ -40,29 +40,34 @@ h2 {
     border-bottom: 1px solid $primarycolor;
 }
 
-.portfolio .portfolio-nav {
+.portfolio .portfolio-container .portfolio-nav {
     a:hover,
     a:active {
-    color: $accentcolor;
+        color: $accentcolor;
     }
 }
+
 .social-link {
     a:hover,
     a:active {
         color: $accentcolor;
     }
 }
+
 a:hover,
 a:active {
     color: $accentcolor;
 }
+
 .box{
     transform: translateX(400%);
     transition: transform 0.8s ease;
 }
+
 .box:nth-of-type(odd){
     transform: translateX(-400%);
 }
+
 .box.show{
     transform: translateX(0);
 }

@@ -15,14 +15,14 @@
       padding: 25px;
       gap: 50px;
   
-      span {
+        span {
             font-family: $headerfont;
             font-style: normal;
             font-size: clamp(1.25rem, 1.0742rem + 0.9375vw, 2.1875rem);
             color: $tertiarycolor;
         }
   
-      p {
+        p {
             font-family: $featurefont;
             color: $secondarycolor;
             align-self: center;
@@ -64,7 +64,7 @@
             background: rgba(255, 255, 255, 0.3);
             opacity: 0;
         }
-
+        
         button:hover:before {
             opacity: 1;
         }

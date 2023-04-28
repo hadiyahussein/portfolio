@@ -287,8 +287,8 @@ h2 {
   border-bottom: 1px solid #1d1d1f;
 }
 
-.portfolio .portfolio-nav a:hover,
-.portfolio .portfolio-nav a:active {
+.portfolio .portfolio-container .portfolio-nav a:hover,
+.portfolio .portfolio-container .portfolio-nav a:active {
   color: #f00b66;
 }
 
@@ -428,7 +428,7 @@ a:active {
 h1 {
   font-family: "Medium", sans-serif;
   font-size: clamp(1.375rem, 0.8594rem + 2.75vw, 4.125rem);
-  line-height: 72px;
+  line-height: 75px;
   font-weight: 100;
   letter-spacing: -0.84px;
 }
@@ -506,8 +506,13 @@ header .intro-section p {
   letter-spacing: -0.34px;
 }
 
+.social-link {
+  margin-right: 5px;
+}
+
 .logo-image {
   width: 30px;
+  margin-left: 5px;
 }
 
 .navigation-container {
@@ -556,7 +561,7 @@ header .intro-section p {
       align-self: flex-end;
   cursor: pointer;
   display: none;
-  padding-right: 20px;
+  margin-right: 10px;
 }
 
 .portfolio {
@@ -697,8 +702,8 @@ header .intro-section p {
 }
 
 @media (max-width: 1020px) {
-  html {
-    margin: 0px;
+  html, body {
+    overflow-x: hidden;
   }
   header {
     height: auto;
@@ -732,6 +737,10 @@ header .intro-section p {
   }
 }
 @media (max-width: 700px) {
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+  }
   .social-link {
     position: fixed;
     height: 20vh;
@@ -827,7 +836,13 @@ header .intro-section p {
     opacity: 0;
     height: 2.5px;
   }
-  .intro-section .blurry {
+  p span {
+    font-size: 20px;
+  }
+  header .intro-section p {
+    font-size: 17px;
+  }
+  header .intro-section .blurry {
     height: 200%;
   }
 }
