@@ -1,5 +1,5 @@
 // Define professions and typing speed
-const professions = ["Hadiya <3", "a Front-end Developer", "a Ux Designer", "a Web Designer", "a Graphic Designer"];
+const professions = ["Hadiya <3", "a Front-end Developer.", "a Ux Designer.", "a Web Designer.", "a Graphic Designer."];
 const speed = 100;
 
 // Initialize profession index, profession element, and profession text
