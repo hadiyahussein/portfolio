@@ -85,12 +85,12 @@ const navSlide = (() => {
 })();
 
 // Check if the page is the home page and load the profession typing
-window.onload = function() {
+window.addEventListener('load', function() {
   checkBoxes();
   window.addEventListener('scroll', checkBoxes);
 
   // Check if the page is the home page and load the profession typing
-  if (window.location.pathname === 'https://hadiyahussein.com') {
+  if (window.location.pathname === '/') {
     typeProfession();
   }
-};
+});
