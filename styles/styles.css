@@ -322,10 +322,15 @@ a:active {
           transform: translateY(0);
 }
 
+.larger-svg {
+  width: 200px;
+  height: 200px;
+}
+
 .about-main {
   background-color: #1d1d1f;
   color: #F1F1F1;
-  cursor: url("../assets/mouse.png"), auto;
+  cursor: url("../assets/mouse.webp"), auto;
 }
 .about-main .navigation-container {
   border-bottom: solid #989393 1px;
@@ -338,6 +343,33 @@ a:active {
   background-color: #989393;
 }
 
+#profession {
+  border-right: 0.05em solid #f00b66;
+  padding-right: 4px;
+  -webkit-animation: typing 2s steps(40, end);
+          animation: typing 2s steps(40, end);
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 88px;
+}
+
+/*typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 .about {
   padding: 100px 0;
 }
@@ -347,7 +379,7 @@ a:active {
 
 .about-img {
   position: fixed;
-  width: 30%;
+  width: 400px;
 }
 
 .about-text {
@@ -476,12 +508,6 @@ a {
 .portfolio-container p {
   line-height: 22.7833px;
   letter-spacing: -0.277px;
-}
-
-span {
-  font-family: "maiola, serif";
-  font-style: italic;
-  font-weight: 600;
 }
 
 p span {
@@ -845,6 +871,11 @@ header .intro-section p {
   }
   header .intro-section .blurry {
     height: 200%;
+  }
+}
+@media (max-width: 1020px) {
+  #profession {
+    vertical-align: baseline;
   }
 }
 @media (max-width: 973px) {

@@ -136,6 +136,12 @@
     }
 }
 
+@media (max-width: 1020px){
+    #profession {
+        vertical-align:baseline;
+    }
+ }
+
 @media (max-width: 973px){
    .about-img{
         position:relative;

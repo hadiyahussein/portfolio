@@ -3,7 +3,7 @@
 .about-main {
   background-color: $primarycolor;
   color: $highlightcolor;
-  cursor: url('../assets/mouse.png'), auto;
+  cursor: url('../assets/mouse.webp'), auto;
   
   .navigation-container{
     border-bottom: solid $secondarycolor 1px;
@@ -16,6 +16,25 @@
     background-color: $secondarycolor;
   }
 }
+#profession {
+  border-right: 0.05em solid $accentcolor;
+  padding-right: 4px;
+  animation: typing 2s steps(40, end);
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 88px;
+}
+
+
+/*typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 .about {
   padding: 100px 0;
@@ -26,7 +45,8 @@
 
 .about-img {
   position: fixed;
-  width: 30%;
+  width: 400px;
+
 }
 
 .about-text {
