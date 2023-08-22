@@ -90,7 +90,7 @@ window.onload = function() {
   window.addEventListener('scroll', checkBoxes);
 
   // Check if the page is the home page and load the profession typing
-  if (window.location.pathname === '/index.html') {
+  if (window.location.pathname === 'https://hadiyahussein.com') {
     typeProfession();
   }
 };
